@@ -1,7 +1,7 @@
 Anders Lansner 20250710
 
-       README file for prBCPNN
-       =======================
+       README file for prBCPNN2
+       ========================
 
        This repository contains PyTorch code for a basic recurrent
        associative memory in ptBCPNN.py. It uses simple outer product
@@ -14,8 +14,8 @@ Anders Lansner 20250710
        hypercolumnar training patterns, and as well as distorted test
        patterns with some units in the training patterns flipped.
 
-       Three different learning rules are implemented, "hebb",
-       "willshaw", "bcp", and some more to come.
+       Three different learning rules are implemented, "hebbian",
+       "willshaw", "bcpnn", and some more to come.
 
        A function for measuring bits-per-synapse is included in
        Measure.py.
