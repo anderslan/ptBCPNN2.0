@@ -14,25 +14,32 @@ Anders Lansner 20250710
        hypercolumnar training patterns, and as well as distorted test
        patterns with some units in the training patterns flipped.
 
-       Three different learning rules are implemented, "hebbian",
-       "willshaw", "bcpnn", and some more to come.
+       Synchronous and asynchronous update methods are implemented and
+       can be tested by commenting/uncommenting in run() and hrun(),
 
-       A function for measuring bits-per-synapse is included in
+       Seven different learning rules are implemented, "hebb",
+       "covar", "precovar", "hopfield", "willshaw", "bcpnn", and
+       "boms" have been implemented.
+
+       Functions for measuring bits-per-synapse are included in
        Measure.py.
 
        Two main functions are included, one to run non-modular and one
        for hypercolumnar networks.
 
+       In First_tests.py and PatStorCap.py are en embryo of tools to
+       evaluate performance.
+
        Getting started
        ---------------
 
-       Start a python terminal and import ptBCPNN and Measure.
+       Start a python terminal and import ptBCPNN2.
 
        In terminal do:
 
-       returns = ptBCPNNc.hrun(1024, 32, 1775, 4, lrule = "bcpnn", niter = 15, seed = 4711)
+       returns = ptBCPNN2.hrun(1024, 32, 1775, niter = 15, nflip = 1, lrule = "bcpnn", seed = 4711, verbosity = 3)
        
-       Should give output:
+       Should give about output:
 
-       Fraction correct =  90.37 %
-       Time elapsed = 1761.2 ms
+       Fraction correct =  92.90 %
+       Time elapsed = 1089.5 ms
